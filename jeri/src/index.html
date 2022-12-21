@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title" content="Hey cutie">
+<meta name=”description” content="A gift for someone I love.">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style type="text/css">
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.topnav .btn {
+	margin-top: 2px !important;
+}
+
+.topnav {
+	text-align: center;
+	flex: 0 0 auto;
+}
+
+@media (hover: none) {
+	.btn-outline-primary:hover {
+		color: #0d6efd;
+		background-color: transparent;
+	}
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+#canvas {
+	/* background-color: #0d6efd; */
+}
+
+.wrapper {
+	flex: 1 1 auto;
+	padding: 0;
+	margin: 0;
+}
+
+</style>
+
+<body>
+	<div class="topnav">
+		<div class="input-group p-1">
+			<input class="form-control" id="custom" placeholder="Enter custom message">
+			<div class="input-group-prepend">
+				<button class="btn btn-primary" id="go">Go</button>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<canvas id="canvas"></canvas>
+	</div>
+</body>
+
+</html>
